@@ -1,0 +1,327 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page - تصميم احترافي</title>  <!-- Bootstrap RTL CSS -->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Google Font (Arabic) -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">  <style>
+    :root{
+      --accent:#ff5a5f; /* اللون المميز */
+      --dark:#0f1724;
+      --muted:#6b7280;
+    }
+    html,body{height:100%;}
+    body{
+      font-family: 'Tajawal', sans-serif;
+      background:#fff;
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Navbar */
+    .navbar-brand{font-weight:800; letter-spacing:1px}
+    .nav-link{font-weight:600}
+
+    /* Hero */
+    .hero{
+      background-image: linear-gradient(180deg, rgba(15,23,36,0.45), rgba(15,23,36,0.45)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3&s=');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:6rem 0 5rem;
+      position:relative;
+    }
+    .hero h1{font-size:2.6rem; font-weight:900}
+    .hero p{font-size:1.05rem; color:rgba(255,255,255,0.9)}
+    .btn-accent{background:var(--accent); border:0; color:#fff; font-weight:700}
+    .btn-outline-accent{border-color:var(--accent); color:var(--accent)}
+
+    /* Features */
+    .feature-card{border:1px solid #eef2f7; padding:1.6rem; border-radius:12px; transition:all .2s}
+    .feature-card:hover{transform:translateY(-6px); box-shadow:0 8px 30px rgba(15,23,36,0.08)}
+
+    /* Gallery */
+    .gallery img{width:100%; height:220px; object-fit:cover; border-radius:8px}
+
+    /* Testimonials */
+    .testimonial{background:#f8fafc; border-radius:12px; padding:1.8rem}
+
+    /* Contact */
+    .form-control:focus{box-shadow:none; border-color:var(--accent)}
+
+    footer{background:#0b1220; color:#cbd5e1; padding:2.6rem 0}
+
+    /* Responsive tweaks */
+    @media (min-width:992px){
+      .hero{padding:8rem 0}
+      .hero h1{font-size:3.4rem}
+    }
+  </style></head>
+<body>  <!-- NAVBAR -->  <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-3 px-lg-5 position-absolute top-0 start-0 end-0">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">سَمَاح</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link text-white" href="#about">عنّي</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">خدمات</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#portfolio">أعمالي</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#testimonials">آراء العملاء</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">تواصل</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-accent ms-3 d-none d-lg-inline-block">اطلب خدمة</a>
+      </div>
+    </div>
+  </nav>  <!-- HERO -->  <header class="hero text-center text-lg-start">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-white">
+          <h1 class="mb-3">أصنع لك Portfolio احترافي يجذب العملاء</h1>
+          <p class="mb-4">تصميم واجهات نظيفة، عرض مشاريع مميز، وتجربة مستخدم مركزة على تحويل الزوار إلى عملاء. مناسب للمبرمجين، المصممين، والمستقلين.</p>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+            <a href="#contact" class="btn btn-accent btn-lg">اطلب الآن</a>
+            <a href="#portfolio" class="btn btn-outline-accent btn-lg">شاهد الأعمال</a>
+          </div>
+          <div class="d-flex gap-3 mt-4 justify-content-center justify-content-lg-start text-start">
+            <div>
+              <h5 class="mb-0">١٢٠+</h5>
+              <small>مشروع مكتمل</small>
+            </div>
+            <div>
+              <h5 class="mb-0">٩٧%</h5>
+              <small>رضا العملاء</small>
+            </div>
+            <div>
+              <h5 class="mb-0">٤ سنوات</h5>
+              <small>خبرة</small>
+            </div>
+          </div>
+        </div><div class="col-lg-6 d-none d-lg-block">
+      <!-- Card mockup on the right -->
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="card shadow-lg" style="border-radius:16px; overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=" class="card-img-top" alt="mockup">
+            <div class="card-body">
+              <h5 class="card-title mb-1">مشروع: تصميم Portfolio</h5>
+              <p class="card-text text-muted small">عرض سريع لمشروع عملي، وصف قصير وإبراز المهارات المستخدمة.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <small class="text-muted">HTML • CSS • Bootstrap</small>
+                </div>
+                <a href="#portfolio" class="btn btn-sm btn-outline-accent">عرض</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" class="w-100 rounded" style="height:140px; object-fit:cover;">
+        </div>
+        <div class="col-6">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" class="w-100 rounded" style="height:140px; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </header>  <!-- ABOUT -->  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h2 class="mb-3">عنّي</h2>
+          <p class="text-muted">أنا سماح محمد — مصممة ومطورة واجهات اهتمامي منصب على إنشاء محافظ أعمال (Portfolio) تعرض شغلك بطريقة احترافية وتجذب العملاء. أعمل على تحسين تجربة المستخدم والتركيز على تحويل الزائر لعميل.</p>
+          <ul class="list-unstyled mt-3">
+            <li>• تصميم واجهات حديثة وسريعة</li>
+            <li>• كتابة محتوى واضح لعرض المشاريع</li>
+            <li>• تحسين SEO للمعارض لظهور أفضل على محركات البحث</li>
+          </ul>
+          <a href="#services" class="btn btn-outline-accent mt-3">الخدمات</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=" class="img-fluid rounded shadow-sm" alt="about">
+        </div>
+      </div>
+    </div>
+  </section>  <!-- SERVICES / FEATURES -->  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3>خدماتي</h3>
+        <p class="text-muted">مجموعة خدمات تناسب احتياجاتك كبورتفوليو احترافي</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h5>تصميم مخصص</h5>
+            <p class="text-muted small mb-0">تصميم يناسب علامتك التجارية وترتيب واضح لأعمالك.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h5>عرض المشاريع</h5>
+            <p class="text-muted small mb-0">صفحات مشاريع مفصلة تشمل الصور، الوصف، والتقنيات المستخدمة.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h5>تحسين الأداء</h5>
+            <p class="text-muted small mb-0">تسريع الصفحة وتحسين تجربة المستخدم لزيادة التحويل.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- PORTFOLIO / GALLERY -->  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h3 class="mb-0">معرض الأعمال</h3>
+          <small class="text-muted">نماذج من المشاريع التي قمت بها</small>
+        </div>
+        <a href="#contact" class="btn btn-outline-accent">اطلب مشروعك</a>
+      </div><div class="row g-3 gallery">
+    <div class="col-sm-6 col-md-4">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="project">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="Screenshot 2025-09-10 004442.png" alt="project">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="Screenshot 2025-09-10 004631.png" alt="project">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="Screenshot 2025-09-10 005010.png" alt="project">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="Screenshot 2025-09-10 004611.png" alt="project">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="Screenshot 2025-09-10 004708.png" alt="project">
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- TESTIMONIALS -->  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3>آراء العملاء</h3>
+        <p class="text-muted">بعض التعليقات من عملائي السابقين</p>
+      </div><div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="testimonial text-center">
+              <p class="mb-1">"عمل احترافي وسرعة في التسليم. التصميم جذب لي عملاء جدد"</p>
+              <small class="text-muted">— محمد، مطور ويب</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="testimonial text-center">
+              <p class="mb-1">"تعاون سلس وفهم جيد لعرض المشاريع بطريقة منظمة"</p>
+              <small class="text-muted">— ليلى، مصممة جرافيك</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
+  </div>
+</div>
+
+  </section>  <!-- CONTACT -->  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h3>تواصل معي</h3>
+          <p class="text-muted">اكتب لي تفاصيل مشروعك وسأرد عليك خلال 24 ساعة.</p>
+          <ul class="list-unstyled">
+            <li>📧 البريد: <a href="mailto:samahmuhammd2005@gmail.com">samahmuhammd2005@gmail.com</a></li>
+            <li>📞 الهاتف: 01025142612</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <form id="contactForm" class="p-4 border rounded">
+            <div class="mb-3">
+              <label class="form-label">الاسم</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">البريد الإلكتروني</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">الرسالة / وصف المشروع</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-accent" type="submit">أرسل</button>
+            </div>
+            <div id="formAlert" class="mt-3" style="display:none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- FOOTER -->  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h5 class="text-white mb-1">سَمَاح</h5>
+          <small>حقوق النشر © 2025. كل الحقوق محفوظة.</small>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small>تابعني على</small>
+          <a href="https://www.linkedin.com/in/samah-mohamed-web-developer/" class="text-decoration-none ms-2">لينكدإن</a>
+        </div>
+      </div>
+    </div>
+  </footer>  <!-- Bootstrap JS -->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  <script>
+    // Simple form handling (توضيح بسيط، يمكنك ربطه بخادم لاحقًا)
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const alertEl = document.getElementById('formAlert');
+
+      if(!name || !email || !msg){
+        alertEl.style.display='block';
+        alertEl.className='alert alert-danger';
+        alertEl.innerText='يرجى ملء جميع الحقول.';
+        return;
+      }
+
+      // Simulate sending
+      alertEl.style.display='block';
+      alertEl.className='alert alert-success';
+      alertEl.innerText='تم إرسال رسالتك! سأرد عليك قريبًا.';
+
+      // Reset
+      this.reset();
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script></body>
+</html>
